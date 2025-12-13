@@ -2,12 +2,12 @@ import products from '../data/products.json';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Footer from '../components/footer.jsx';
+import { useCart } from '../App';
 
 function ProductPage() {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
-  
-
+  const {addToCart } =  useCart()
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedSize, setSelectedSize] = useState('M');
   const [selectedColor, setSelectedColor] = useState('black');
@@ -23,14 +23,20 @@ function ProductPage() {
   }, [id]);
 
   const handleAddToCart = () => {
-    console.log({
-      productId: product.id,
+    if (!product) return
+     addToCart({
+      id: product.id,
       name: product.name,
+      price: product.price,
       size: selectedSize,
       color: selectedColor,
-      quantity
+      quantity,
+      image: product.images?.[selectedImage] || product.image,
     });
+
+
     
+
     setTimeout(() => {
       setAddedToCart(true);
       setTimeout(() => setAddedToCart(false), 3000);

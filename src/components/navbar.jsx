@@ -6,7 +6,9 @@ function Navbar() {
         <>
             <nav className=" bg-white text-gray-800 flex items-center justify-between md:justify-around px-4 border-b border-gray-300 font-family-inter fixed w-full top-0 left-0 z-50">
                 <div className='h-14 my-2'>
-                    <h2 className='text-2xl '>ThreadVerse </h2>
+                    <Link to="/">
+                    <h2 className='text-2xl hover:scale-105 transition-all 300 ease-in-out '>ThreadVerse </h2>
+                    </Link>
                     <span className='text-brand-terracotta text-[14px] '>Wear Your Story</span>
                 </div>
                 <div className='my-auto hidden md:block'>

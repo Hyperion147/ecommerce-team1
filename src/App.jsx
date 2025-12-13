@@ -10,7 +10,6 @@ import Layout from './pages/home.jsx';
 import ProductPage from './pages/productPage.jsx';
 import Cart from './pages/cart.jsx';
 
-// simple cart context (no TypeScript)
 const CartContext = createContext(undefined);
 
 export const useCart = () => {
@@ -25,7 +24,9 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (item) => {
+    console.log('Adding to cart:', item);
     setCartItems((prev) => {
+       console.log('Prev cart:', prev);     
       const existingIndex = prev.findIndex(
         (i) => i.id === item.id && i.size === item.size && i.color === item.color
       );
