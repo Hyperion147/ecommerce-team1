@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "category": "Essentials",
+    "name": "Winter Drop Essential",
+    "rating": 4.9,
+    "reviews": 156,
+    "price": 1499,
+    "image": "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=800&h=1000&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=800&h=1000&fit=crop",
+      "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=800&h=1000&fit=crop&crop=entropy",
+      "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=800&h=1000&fit=crop&crop=bottom"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "id": "charcoal", "hex": "rgb(62, 66, 75)", "name": "Charcoal" },
+      { "id": "olive", "hex": "rgb(85, 107, 47)", "name": "Olive" },
+      { "id": "brick", "hex": "rgb(212, 165, 116)", "name": "Brick Red" },
+      { "id": "forest", "hex": "rgb(34, 197, 94)", "name": "Forest" }
+    ],
+    "available": true
+  },
+  {
+    "id": 2,
+    "category": "Graphic Tees",
+    "name": "Urban Street Art Tee",
+    "rating": 4.8,
+    "reviews": 94,
+    "price": 1299,
+    "image": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=1000&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=1000&fit=crop",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=1000&fit=crop&crop=entropy",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&h=1000&fit=crop&crop=bottom"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "id": "black", "hex": "rgb(26, 26, 26)", "name": "Black" },
+      { "id": "white", "hex": "rgb(255, 255, 255)", "name": "White" },
+      { "id": "gray", "hex": "rgb(108, 117, 125)", "name": "Gray" },
+      { "id": "navy", "hex": "rgb(0, 21, 41)", "name": "Navy" }
+    ],
+    "available": true
+  },
+  {
+    "id": 3,
+    "category": "Essentials",
+    "name": "Classic Minimal Tee",
+    "rating": 4.7,
+    "reviews": 128,
+    "price": 999,
+    "image": "/images/image3.webp",
+    "images": [
+      "/images/image3.webp",
+      "/images/image3.webp",
+      "/images/image3.webp"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "id": "black", "hex": "rgb(26, 26, 26)", "name": "Black" },
+      { "id": "white", "hex": "rgb(255, 255, 255)", "name": "White" },
+      { "id": "olive", "hex": "rgb(85, 107, 47)", "name": "Olive" },
+      { "id": "brick", "hex": "rgb(212, 165, 116)", "name": "Brick Red" }
+    ],
+    "available": true
+  },
+  {
+    "id": 4,
+    "category": "Essentials",
+    "name": "Minimal Logo Tee",
+    "rating": 4.6,
+    "reviews": 203,
+    "price": 899,
+    "image": "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800&h=1000&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800&h=1000&fit=crop",
+      "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800&h=1000&fit=crop&crop=entropy",
+      "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=800&h=1000&fit=crop&crop=bottom"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "id": "white", "hex": "rgb(255, 255, 255)", "name": "White" },
+      { "id": "black", "hex": "rgb(26, 26, 26)", "name": "Black" },
+      { "id": "navy", "hex": "rgb(0, 21, 41)", "name": "Navy" }
+    ],
+    "available": true
+  },
+  {
+    "id": 5,
+    "category": "Graphic Tees",
+    "name": "Abstract Geometry Tee",
+    "rating": 4.7,
+    "reviews": 87,
+    "price": 1199,
+    "image": "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=800&h=1000&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=800&h=1000&fit=crop",
+      "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=800&h=1000&fit=crop&crop=entropy",
+      "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=800&h=1000&fit=crop&crop=bottom"
+    ],
+    "sizes": ["M", "L", "XL", "XXL"],
+    "colors": [
+      { "id": "black", "hex": "rgb(26, 26, 26)", "name": "Black" },
+      { "id": "white", "hex": "rgb(255, 255, 255)", "name": "White" },
+      { "id": "purple", "hex": "rgb(147, 51, 234)", "name": "Purple" },
+      { "id": "teal", "hex": "rgb(20, 184, 166)", "name": "Teal" }
+    ],
+    "available": true
+  },
+  {
+    "id": 6,
+    "category": "Essentials",
+    "name": "Vintage Wash Tee",
+    "rating": 4.8,
+    "reviews": 142,
+    "price": 1099,
+    "image": "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=800&h=1000&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=800&h=1000&fit=crop",
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=800&h=1000&fit=crop&crop=entropy",
+      "https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=800&h=1000&fit=crop&crop=bottom"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": [
+      { "id": "vintage-black", "hex": "rgb(45, 45, 48)", "name": "Vintage Black" },
+      { "id": "washed-blue", "hex": "rgb(59, 130, 246)", "name": "Washed Blue" },
+      { "id": "faded-gray", "hex": "rgb(156, 163, 175)", "name": "Faded Gray" }
+    ],
+    "available": true
+  }
+]

@@ -5,7 +5,7 @@ function Hero() {
     <>
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="../../public/images/hero-image.jpeg" alt="Model wearing Classic Minimal Tee" className="w-full h-full object-cover opacity-90" />
+          <img src="/images/hero-image.webp" alt="Model wearing classNameic Minimal Tee" className="w-full h-full object-cover opacity-90" />
           <div className="absolute inset-0 bg-linear-to-r from-black/60 to-transparent">
             <div className="max-w-4xl text-white flex flex-col items-start justify-center h-full px-6 sm:px-12 lg:px-24 md:ml-34">
               <h1 className="text-4xl sm:text-5xl lg:text-7xl mb-4 lg:mb-6 ">Unleash Your Style</h1>

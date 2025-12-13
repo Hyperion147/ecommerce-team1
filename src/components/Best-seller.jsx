@@ -1,35 +1,40 @@
-import React from 'react'
-
 const bestSellers = [
     {
-        id: "bs1",
+        id: "1",
         name: "Classic Minimal Tee",
         shortTitle: "Everyday Essential",
-        image: "/images/cap-model.jpeg",
-        priceInInr: 1299,
+        image: "/images/cap-model.webp",
+        priceInInr: 1499,
         rating: 4.8,
         reviewCount: 247,
     },
     {
-        id: "bs2",
+        id: "2",
         name: "Retro Sunset Graphic Tee",
         shortTitle: "Retro Vibes",
-        image: "/images/printed-image.jpeg",
-        priceInInr: 999,
+        image: "/images/printed-image.webp",
+        priceInInr: 1299,
         rating: 4.6,
         reviewCount: 183,
     },
     {
-        id: "bs3",
+        id: "3",
         name: "Street Art Series Tee",
         shortTitle: "Street Art Drop",
-        image: "/carousel/image3.jpg",
-        priceInInr: 1499,
+        image: "/images/image3.webp",
+        priceInInr: 999,
         rating: 4.9,
         reviewCount: 312,
     },
 ]
+
+
+
 function BestSeller() {
+    const handleProductClick = (productId) => {
+        window.location.href = `/products/${productId}`;
+    };
+
     return (
         <section className="w-full  flex flex-col items-center gap-2 py-16">
 
@@ -40,14 +45,15 @@ function BestSeller() {
                 Our most popular products
             </p>
             <div className="w-full flex justify-center ">
-                <div className="grid grid-cols-1 sm:grid-cols-1 max-sm:w-xl max-sm:h-[2000px] md:grid-cols-2 md:ml-10 lg:ml-0 lg:grid-cols-3 gap-8 w-9xl ">
+                <div className="grid grid-cols-1 sm:grid-cols-1 max-sm:w-xl max-sm:h-500 md:grid-cols-2 md:ml-10 lg:ml-0 lg:grid-cols-3 gap-8 w-9xl ">
                     {bestSellers.map((product) => (
                         <div
                             key={product.id}
                             className="group border   rounded-xl w-full flex flex-col hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+                            onClick={() => handleProductClick(product.id)}
                         >
 
-                            <div className="h-[600px] w-full overflow-hidden">
+                            <div className="h-150 w-full overflow-hidden">
                                 <img
                                     src={product.image}
                                     alt={product.name}
@@ -65,14 +71,14 @@ function BestSeller() {
                                 <p className="text-sm text-gray-600 mt-1">
                                     <span className='text-yellow-500 '>★</span> {product.rating} <span className='text-gray-400'>   ({product.reviewCount} reviews)</span>
                                 </p>
-                                <p className="mt-2  text-2xl mb-5 flex items-center justify-between font-semibold text-gray-900">
+                                <div className="mt-2  text-2xl mb-5 flex items-center justify-between font-semibold text-gray-900">
                                     ₹{product.priceInInr}
-                                    <div className="flex gap-1">
+                                    <p className="flex gap-1">
                                         <span className="px-2 py-1 bg-gray-100 text-xs rounded">S</span>
                                         <span className="px-2 py-1 bg-gray-100 text-xs rounded">M</span>
                                         <span className="px-2 py-1 bg-gray-100 text-xs rounded">L</span>
-                                        <span className="px-2 py-1 bg-gray-100 text-xs rounded">XL</span></div>
-                                </p>
+                                        <span className="px-2 py-1 bg-gray-100 text-xs rounded">XL</span></p>
+                                </div>
                             </div>
                         </div>
                     ))}

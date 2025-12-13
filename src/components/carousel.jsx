@@ -15,14 +15,14 @@ const slides = [
         title: "Street Art Series",
         subtitle: "Bold graphic designs",
         cta: "Explore Collection",
-        image: "../../public/carousel/image1.jpeg",
+        image: "../../public/carousel/image1.webp",
         href: "/products"
     },
     {
-        title: "Minimal Classics",
+        title: "Minimal classNameics",
         subtitle: "Everyday essential tees",
-        cta: "Shop Classics",
-        image: "../../public/carousel/image2.jpeg",
+        cta: "Shop classNameics",
+        image: "../../public/carousel/image2.webp",
         href: "/products"
 
     },
@@ -48,7 +48,7 @@ export default function FeaturedCollectionsCarousel() {
     }, [api])
 
     return (
-        <section className="w-[90vw] md:mx-auto md:h-screen flex flex-col items-center gap-2 py-16 ">
+        <section className="w-[90vw] md:mx-auto md:h-screen flex flex-col items-center justify-center gap-2 py-16 max-sm:px-auto max-sm:mx-auto ">
 
             <h2 className="text-4xl md:text-5xl font-semibold text-gray-900">
                 Featured Collections
@@ -58,7 +58,7 @@ export default function FeaturedCollectionsCarousel() {
             </p>
 
             <Carousel
-                className=" max-w-9xl px-4 "
+                className=" max-w-9xl px-4  "
                 opts={{ loop: true }}
                 plugins={[autoplay.current]}
                 onMouseEnter={autoplay.current.stop}
@@ -74,7 +74,7 @@ export default function FeaturedCollectionsCarousel() {
                                     <img
                                         src={slide.image}
                                         alt={slide.title}
-                                        className=" w-full h-[360px] md:h-[420px] lg:h-[560px] object-cover -my-12.5"
+                                        className=" w-full h-90 md:h-105 lg:h-140 object-cover -my-12.5"
                                     />
 
 
@@ -97,8 +97,8 @@ export default function FeaturedCollectionsCarousel() {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className="  absolute -left-10  md:ml-16 md:-left-8 bg-white shadow-md hover:bg-white h-14 w-14 hover:scale-110" />
-                <CarouselNext className=" hidden md:flex  absolute right-12 md:mr-16 md:-right-8 bg-white shadow-md hover:bg-white h-14 w-14 hover:scale-110" />
+                <CarouselPrevious className="  absolute -left-10 max-sm:hidden md:ml-16 md:-left-8 bg-white shadow-md hover:bg-white h-14 w-14 hover:scale-110" />
+                <CarouselNext className=" hidden md:flex  absolute right-12 max-sm:hidden  md:mr-16 md:-right-8 bg-white shadow-md hover:bg-white h-14 w-14 hover:scale-110" />
             </Carousel>
             
             
