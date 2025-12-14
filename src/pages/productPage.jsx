@@ -105,7 +105,7 @@ function ProductPage() {
           <div className="text-sm text-gray-600">
             <a href="/" className="hover:text-[#D4A574]">Home</a>
             <span className="mx-2">&gt;</span>
-            <a href="/products" className="hover:text-[#D4A574]">Products</a>
+            <a href="/products" className="hover:text-[#D4A574]">All Products</a>
             <span className="mx-2">&gt;</span>
             <span className="text-gray-900">{product.name}</span>
           </div>
